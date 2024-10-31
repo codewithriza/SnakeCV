@@ -5,6 +5,10 @@ import math
 from cvzone.HandTrackingModule import HandDetector
 import cvzone
 
+
+
+
+
 # Let's get the camera running
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
@@ -26,7 +30,7 @@ class SnakeGame:
         self.food_height, self.food_width, _ = self.food_image.shape
         self.food_point = 0, 0
         self.random_food_location()
-        self.score = 0
+        self.score = 0 
         self.game_over = False
 
     def random_food_location(self):
